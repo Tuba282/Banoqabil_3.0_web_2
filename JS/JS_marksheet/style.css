@@ -1,0 +1,24 @@
+span {
+  font-weight: bold;
+  color: #155e75;
+  width: 100px;
+}
+.tin2 span {
+  border: 1px #155e75;
+}
+.main_box {
+  margin: 0 auto;
+  border-radius: 29px;
+}
+.btn{
+  border:2px solid #155E75;
+  
+  border-radius: 19px;
+  /* padding: 5px; */
+  color: black;
+}
+.btn:hover{
+  border:2px solid #ffffff;
+  background-color: #155E75;
+  color: white;
+}
