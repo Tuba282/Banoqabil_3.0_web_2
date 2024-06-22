@@ -1,37 +1,85 @@
-const totalMarks = 200;
-// Array of Objects
-const students = [
-  {
-    name: "Ali",
-    scienceMarks: 90,
-    englishMarks: 70,
-  },
-  {
-    name: "Huzaifa",
-    scienceMarks: 10,
-    englishMarks: 40,
-  },
-  {
-    name: "Asim",
-    scienceMarks: 40,
-    englishMarks: 60,
-  },
-];
+// let total = 200;
 
-function calculateMarks(student) {
-  const total = student.scienceMarks + student.englishMarks;
-  const percentage = (total / totalMarks) * 100;
-  return { percentage, total };
-}
+// const engMarks = document.getElementById('in1').value;
+// const sciMarks = document.getElementById('in2').value;
 
-for (let index = 0; index < students.length; index++) {
-  const result = calculateMarks(students[index]);
-  console.log("-------------------------------------");
-  console.log("-------------------------------------");
-  console.log("Name: " + students[index].name);
-  console.log("Science: " + students[index].scienceMarks);
-  console.log("English: " + students[index].englishMarks);
-  console.log("Total Marks: " + result.total);
-  console.log("Percentage: " + result.percentage);
-  result.percentage >= 40 ? console.log("PASSED") : console.log("FAILED"); // Turnery Operators
-}
+// let calculate = () => {
+//   const totalMarks = engMarks + sciMarks;
+//   document.getElementById('result').innerHTML = totalMarks;
+
+// };
+
+let total = 200;
+
+let calculate1 = () => {
+  {
+    // getting marks from user
+    const engMarksInput = document.getElementById("in1");
+    const sciMarksInput = document.getElementById("in2");
+
+    // put user marks in a variable
+    const engMarks = parseInt(engMarksInput.value);
+    const sciMarks = parseInt(sciMarksInput.value);
+    // addition of marks
+    const totalMarks = engMarks + sciMarks;
+    if (totalMarks > 60) {
+      document.getElementById(
+        "result1"
+      ).innerHTML = `Pass : ${total} / ${totalMarks}`;
+    } else {
+      document.getElementById(
+        "result1"
+      ).innerHTML = `Fail : ${total} / ${totalMarks}`;
+    }
+  }
+
+  //   document.getElementById('result').innerHTML = totalMarks;
+};
+let calculate2 = () => {
+  {
+    // getting marks from user
+    const engMarksInput = document.getElementById("in3");
+    const sciMarksInput = document.getElementById("in4");
+
+    // put user marks in a variable
+    const engMarks = parseInt(engMarksInput.value);
+    const sciMarks = parseInt(sciMarksInput.value);
+    // addition of marks
+    const totalMarks = engMarks + sciMarks;
+    if (totalMarks > 60) {
+      document.getElementById(
+        "result2"
+      ).innerHTML = `Pass : ${total} / ${totalMarks}`;
+    } else {
+      document.getElementById(
+        "result2"
+      ).innerHTML = `Fail : ${total} / ${totalMarks}`;
+    }
+  }
+
+  //   document.getElementById('result').innerHTML = totalMarks;
+};
+let calculate3 = () => {
+  {
+    // getting marks from user
+    const engMarksInput = document.getElementById("in5");
+    const sciMarksInput = document.getElementById("in6");
+
+    // put user marks in a variable
+    const engMarks = parseInt(engMarksInput.value);
+    const sciMarks = parseInt(sciMarksInput.value);
+    // addition of marks
+    const totalMarks = engMarks + sciMarks;
+    if (totalMarks > 60) {
+      document.getElementById(
+        "result3"
+      ).innerHTML = `Pass : ${total} / ${totalMarks}`;
+    } else {
+      document.getElementById(
+        "result3"
+      ).innerHTML = `Fail : ${total} / ${totalMarks}`;
+    }
+  }
+
+  //   document.getElementById('result').innerHTML = totalMarks;
+};
