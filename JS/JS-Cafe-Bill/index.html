@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Cafe-Bill</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head><style>
+     body {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        background-color: #160503;
+        /* background-color: rgba(254, 254, 254, 0.169); */
+
+    }
+    .body1 {
+        background-image: url(images/body\ \(1\).jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+   
+    
+  </style>
+
+  <body>
+    <!-- navbar + hero section -->
+    <div class="body1 flex  h-screen w-full">
+      <div class="flex">
+        <img class="img-fluid logo w-24 h-24 ml-4 mt-2" src="images/logo.png" alt="" />
+      <h1 class="text-5xl text-white w-24 h-24 ml-4 mt-2     font-bold">Coffee <span>Time</span></h1>
+      </div>
+
+      <div class="block sm:-pl-[5%] -ml-[25%] sm:-ml-[13%] mt-[48%] md:mt-[25%] w-[500px] md:w-[500px]  text-white">
+       
+          <p class=" text-5xl font-bold">We Are <span>Open</span></p>
+          <p class="tracking-wide mt-4">Coffee's success as a beverage undoubtedly is owing both to the caffeine it harbors and to its sensory pleasure. Coffee lovers come to associate the energizing lift of the caffeine with the richness and aroma of the beverage that delivers it.</p>
+        
+      </div>
+      
+    </div>
+    <!-- body  -->
+
+    
+      <div class=" content-center h-screen md:h-screen w-full md:full  text-white">
+  
+        <div class="flex -px-8  pt-16 md:px-12  justify-around">
+          <img src="images/image (1).png" class="md:w-80 md:-mt-2 md:h-80 h-[200px] w-[200px]">
+          <ol class="font-thin md:pt-24 pt-12   md:text-xl text-xl">
+            <li>AMERCANO  <span class="ml-[2px] md:ml-[50px]">Rs-120</span></li>
+            <li>LATTE  <span class="ml-[20px] md:ml-[110px]">Rs-180</span></li>
+            <li>MOCHA <span class="ml-[20px] md:ml-[110px]">Rs-150</span></li>
+            <li>CAPONA  <span class="ml-[20px] md:ml-[95px]">Rs-100</span></li>
+            <li>EXPRESSO <span class="ml-[20px] md:ml-[50px]">Rs-120</span></li>
+          </ol>
+        </div>
+        <div class="flex  px-2 md:px-96 justify-between">
+          
+          <ol class="font-thin md:pt-28 pt-24   md:text-xl text-xl">
+            <li>AMERCANO  <span class="ml-[2px] md:ml-[50px]">Rs-120</span></li>
+            <li>LATTE  <span class="ml-[20px] md:ml-[110px]">Rs-180</span></li>
+            <li>MOCHA <span class="ml-[20px] md:ml-[110px]">Rs-150</span></li>
+            <li>CAPONA  <span class="ml-[20px] md:ml-[85px]">Rs-100</span></li>
+            <li>EXPRESSO <span class="ml-[20px] md:ml-[50px]">Rs-120</span></li>
+          </ol>
+          <img src="images/image (2).png" class=" md:-mt-2 mt-12 md:w-80 md:-mt-2 md:h-80 h-[200px] w-[200px]">
+        </div>
+      </div>
+      <div class="h-SCREEN md:mt-2 mt-40 content-center text-white">
+      <div class="flex px-2  md:px-96 justify-around">
+        <img src="images/image (3).png" class="md:w-80 md:mt-2 mt-24 md:mt-24 md:h-80 h-[200px] w-[200px]">
+        <ol class="font-thin md:pt-28 pt-24   md:text-xl text-xl">
+          <li>AMERCANO  <span class="ml-[2px] md:ml-[50px]">Rs-120</span></li>
+          <li>LATTE  <span class="ml-[20px] md:ml-[110px]">Rs-180</span></li>
+          <li>MOCHA <span class="ml-[20px] md:ml-[110px]">Rs-150</span></li>
+          <li>CAPONA  <span class="ml-[20px] md:ml-[95px]">Rs-100</span></li>
+          <li>EXPRESSO <span class="ml-[20px] md:ml-[50px]">Rs-120</span></li>
+        </ol>
+      </div>
+      <div class="flex  px-2 md:px-96 justify-between">
+          
+        <ol class="font-thin md:pt-28 pt-24   md:text-xl text-xl">
+          <li>AMERCANO  <span class="ml-[2px] md:ml-[50px]">Rs-120</span></li>
+          <li>LATTE  <span class="ml-[20px] md:ml-[110px]">Rs-180</span></li>
+          <li>MOCHA <span class="ml-[20px] md:ml-[110px]">Rs-150</span></li>
+          <li>CAPONA  <span class="ml-[20px] md:ml-[85px]">Rs-100</span></li>
+          <li>EXPRESSO <span class="ml-[20px] md:ml-[50px]">Rs-120</span></li>
+        </ol>
+        <img src="images/image (4).png" class=" md:-mt-2 mt-12 md:w-80 md:-mt-2 md:h-80 h-[200px] w-[200px]">
+      </div>
+      <!-- main section (input) -->
+
+      <h1 class=" text-center md:text-[130px] mt-24 text-[80px] text-white mb-8">Billing Section</h1> <!--w-16 h-16 border-2 border-black rounded-->
+
+
+      <div class="conatiner ">
+        <!-- 1st div -->
+        <div class="flex justify-center m-8">
+          <div class="w-24 mx-4 flex justify-center">
+            <label for="lat_in" class="content-center mr-4">LATTE:</label>  
+            <input
+              type="text"
+              class="w-16 h-16 rounded text-center text-xl text-gray-900"
+             
+              name="lat_in"
+          
+            />
+          </div>
+          <div class="w-24 mx-4 justify-center">
+            <div class="w-24 mx-12 flex justify-center">
+              <label for="moc_in" class="content-center mr-4 ">MOCHA:</label>  
+              <input
+                type="text"
+                class="w-16 h-16 rounded text-center text-xl text-gray-900"
+           
+                name="moc_in"
+            
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 2nd div -->
+        <div class="flex justify-center m-8">
+          <div class="w-24 mx-4 flex justify-center">
+            <label for="cap_in" class="content-center mr-4">CAPONA:</label>  
+            <input
+              type="text"
+              class="w-16 h-16 rounded text-center text-xl text-gray-900"
+              name="cap_in"
+            />
+          </div>
+          <div class="w-24 mx-4 justify-center">
+            <div class="w-24 mx-12 flex justify-center">
+              <label for="exp_in" class="content-center mr-4 ">EXPRESSO:</label>  
+              <input
+                type="text"
+                class="w-16 h-16 rounded text-center text-xl text-gray-900"
+                
+                name="exp_in"
+              
+              />
+            </div>
+          </div>
+        </div>
+        <!-- 3rd total div -->
+<div class="flex justify-center m-8">
+  <div class="w-24 mx-4 flex justify-center">
+    <button class="w-[100px] h-16 content-center border-2 rounded md:ml-[150px] md:mt-[30px] ml-[130px] mt-[13px] px-4 justify-center py-2" id="check_total">Check Total</button>
+    <button class="w-[100px] h-16 content-center border-2 rounded md:ml-[150px] md:mt-[30px] ml-[130px] mt-[13px] px-4 justify-center py-2">Rs <i id="pora_total"></i></button>
+  </div>
+</div>
+    <!-- end section -->
+    <div class="conatiner ">
+      <!-- 1st div   -->
+      <div class="flex justify-center m-8">
+        <div class="w-48 mx-4 flex justify-center">
+          <h1 class=" text-center md:text-[130px] mt-24 text-[80px] text-white mb-8">Thank You</h1>
+          <img src="images/man.png"  class="md:mt-40 mt-32  h-[200px] w-[250px] md:h-[300px] md:w-[250px]">
+        </div>
+      </div></div>
+<br><br><br><br><br>
+    <script src="app1.js"></script>
+  </body>
+</html>
+
