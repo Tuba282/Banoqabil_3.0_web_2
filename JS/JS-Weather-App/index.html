@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwind cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="big_main text-white font-semibold">
+      <div
+        class="sub-main-box flex flex-col w-[800px]  h-[400px] sm:[max-width: 640px]"
+      >
+        <!-- <video autoplay muted loop id="myVideo">
+          <source src="assets/clouds.mp4" type="video/mp4" />
+        </video> -->
+        <!-- date and time           search bar + search icon  parent div -->
+        <div class="date-time flex justify-between p-4">
+          <div class="time-date w-[35%] ">
+            <h2 class="time text-5xl">12:00 AM</h2>
+            <h3 class="date text-xl">Sunday, July 8 2022</h3>
+          </div>
+
+          <div class="search-bar w-[65%]">
+            <input
+              type="text"
+              placeholder="Search for city"
+              class="srch_input w-48 text-gray-500  h-8 rounded-2xl placeholder-slate-500 p-4"
+            />
+            <button class="srch_btn w-8 h-8 bg-white p-1 rounded-2xl">
+              <i
+                class="fa-solid fa-magnifying-glass srch_icon text-gray-600"
+              ></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- error img invalid parent div -->
+        <div class="error">
+          <p class="invalid">
+            Invalid City <br /><br />
+            Check Spelling
+          </p>
+        </div>
+        <!-- image and weather detail parent div -->
+        <div
+          class="image-weather-detail h-96  w-[100%] flex justify-between p-4">
+        
+        <div class="flex w-[90%] justify-around  p-8 m-8 h-[350]">
+          <div class="details w-[50%] p-2 leading-10 text-left text-3xl ">
+            <p>HUMIDITY :<b class="ml-2 humidity"> </b> %</p>
+            <p>WIND SPEED :<b class="ml-2 wind"> </b> km/h</p>
+            <p>PRESSURE :<b class="ml-2 pre"> </b> %</p>
+          </div>
+          <div class="city_temp w-[50%] p-2 leading-5 mr-4">
+            <h1 class="text-5xl city">Karachi</h1>
+            <h1 class="text-4xl mt-2 temp">23 <sup><b>o</b></sup> C</h1>
+            <h1 class="text-4xl mt-2 feelslike">Cloudy</h1>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

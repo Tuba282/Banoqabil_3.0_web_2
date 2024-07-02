@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family:font1 ;
+  src: url(./assets/Alvina_Demo.ttf);
+}
+@font-face {
+  font-family: font2;
+  src: url(./assets/Magiesta.ttf);
+  /* background-image: url(./assets/cloudy-today.jpg); */
+  /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+  /* background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%); */
+}
+.big_main {
+  width: 100%;
+  height: 100vh;
+  /* background: linear-gradient(135deg,rgb(20, 19, 19),rgba(35, 33, 33, 0.849)); */
+  background-image: linear-gradient(to right, #343530 0%, #0c8ba5 25%, #3eafaa 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: font2;
+  
+  padding: 10% 20%;
+}.sub-main-box{
+  border: 5px double rgb(255, 255, 255);
+  padding: 8px;
+  border-radius: 14px;
+  background-image: linear-gradient(135deg,rgba(22, 18, 22, 0.27),rgba(41, 39, 39, 0.849)), url(./assets/back_img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.time-date{
+    letter-spacing: 0.3rem;
+}
+.details{
+    font-family: font2;
+}
+/* #myVideo {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  z-index: -2;
+} */
+
+.feelsLike {
+    text-align: center;
+}
+.error{
+    display: none;
+    padding: 10px 10%;
+    justify-content: center;
+    /* margin: 4px; */
+}.invalid{
+    text-align: center;
+    align-self: center;
+    font-size: 32px;
+}
