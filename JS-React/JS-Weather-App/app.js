@@ -44,7 +44,7 @@ const get = async () => {
     document.querySelector(".temp").innerHTML =
       Math.round(data.main.temp) + "<sup><b>o</b></sup> C";
     document.querySelector(".humidity").innerHTML = data.main.humidity;
-    document.querySelector(".pre").innerHTML = data.main.pressure;
+    document.querySelector(".wind").innerHTML = data.main.pressure;
     document.querySelector(".feelslike").innerHTML = data.main.feels_like;
     3;
 
@@ -74,6 +74,6 @@ const get = async () => {
   }
 };
 
-srch_icon.addEventListener("click", () => {
-  get();
-});
+// srch_icon.addEventListener("click", () => {
+//   get();
+// });

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: font_1;
+  src: url(assets/AppleGaramond-Italic.ttf);
+}
+.main {
+  max-width: 90%;
+  max-height: 700px;
+  width: 90%;
+  height: 700px;
+  min-width: 60%;
+  min-height: 600px;
+  overflow:hidden;
+  margin: 0 auto;
+  margin-top: 10%;
+  font-family: font_1;
+  border-radius: 13px;
+  background: linear-gradient(rgba(22, 18, 22, 0.623), rgba(41, 39, 39, 0.336)),
+  url(./assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 8px 16px 4px #9e9e9e;
+  background-color: #43413f9a;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+.error {
+  width: 100%;
+  height: 50%;
+  color: #ffffff;
+  word-spacing: 0.09em;
+  text-align: center;
+  display: none;
+}
+
+.upperDiv {
+  width: 100%;
+  height: 50%;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.lowerDiv {
+  width: 100%;
+  height: 50%;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0px 0px 10px 10px;
+}
+.inpt {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.inpt .icon1,
+.inpt .icon2 {
+  width: 50px;
+  color: #ffffff;
+  text-align: center;
+  font-size: larger;
+}
+.inpt .input {
+  color: #ffffff;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 70px;
+  padding: 3px 15px;
+  text-align: center;
+  background-color: rgba(45, 44, 44, 0.288);
+  align-items: center;
+}
+.inpt .input:focus {
+  color: #ffffff;
+}
+.cityDetail {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  align-items: start;
+  color: white;
+  /* display: none; */
+}
+.shortimg {
+  width: 80px;
+  height: 70px;
+  background-image: url(assets/cloudy.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.cityDetail .country {
+  margin-top: 20px;
+  font-size: 35px;
+}
+.cityDetail .city {
+  font-size: xx-large;
+}
+.cityDetail .feels_img {
+  display: flex;
+  align-items: center;
+}
+.lower_sub {
+  width: 100%;
+  padding-top: 45%;
+  display: flex;
+}
+.timDetails {
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+  color: white;
+}
+.timDetails .time {
+  font-size: 280%;
+}
+.timDetails .date {
+  margin-top: -10px;
+}
+.we_details {
+  width: 40%;
+  margin-top: 20px;
+  font-size: small;
+  text-align: right;
+  padding: 10px;
+  height: 100%;
+  color: white;
+}

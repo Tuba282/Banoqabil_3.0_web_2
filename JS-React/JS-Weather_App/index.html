@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS-Weather-App</title>
+    <!-- custom style sheet -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwindcss cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="card">
+        <div class="upperDiv">
+          <div class="inpt">
+            <div class="icon1">
+              <a href="index.html"><i class="fa-solid fa-repeat" style="color: #ffffff;"></i></a>
+            </div>
+            <input
+              type="text"
+              placeholder="Enter City Name ..."
+              class="input"
+            />
+            <div class="icon2">
+              <i class="fa-solid fa-gear icon" style="padding-top: 5px"></i>
+            </div>
+          </div>
+          <!-- Invalid Error Message -->
+          <div class="error">
+            <h1 class="text-5xl mb-8 mt-8">Invalid City</h1>
+            <p class="text-xl">Hint :&nbsp;&nbsp;Check the spelling</p>
+          </div>
+          <div class="cityDetail">
+            <!-- <p class="country">Pakistan </p> -->
+            <p class="city">Karachi</p>
+            <div class="feels_img">
+              <p class="feelslike">Cloudy</p>
+              <div class="shortimg"></div>
+            </div>
+            <p class="temp">40 °C</p>
+          </div>
+        </div>&nbsp;&nbsp;
+        <div class="lowerDiv">
+          <div class="lower_sub">
+            <div class="timDetails">
+              <p class="time">08:30 <span class="sm-font">AM</span></p>
+              <p class="date">Wednesday, 18 October 2024</p>
+            </div>
+            <div class="we_details">
+              <p>Humidity : <b class="humidity">&nbsp; 70&nbsp;</b>&nbsp;&nbsp;%</p>
+              <p>Wind : <b class="wind">&nbsp; 120&nbsp;</b>&nbsp;&nbsp;m/s</p>
+              <p>Speed : <b class="speed">&nbsp; 56&nbsp;</b>&nbsp;&nbsp;km/s</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br />
+
+    <script src="app.js"></script>
+  </body>
+</html>
