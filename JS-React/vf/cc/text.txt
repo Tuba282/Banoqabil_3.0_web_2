@@ -1,0 +1,56 @@
+#! /usr/bin/env node
+import inquirer from "inquirer";
+
+const currency: any = {
+  USD: 1,       //Base Currency (all currency exchanges according to USD rate)
+  CAD: 1.39,    //Canadian Dollar 1.39 = 1 USD
+  AUD: 1.54,    //Australian Dollar 1.54 = 1 USD
+  Yuan: 7.24,   //Chinese Yuan = 1 USD
+  OMR: 0.38,    //Omani Rial 0.38 =1 USD
+  JPY: 149.89,  //Japanese Yen 149.89 = 1 USD
+  INR: 83.75,   //Indian Rupees 83.75 = 1 USD
+  PKR: 279.00,  //Pakistani Rupees 279.00  = 1 USD
+};
+
+let Answer: any = await inquirer.prompt([
+  {
+    name: "from",
+    type: "list",
+    message: "Please select  from currency 😉  :",
+    choices: ["USD", "EUR", "GBP", "JPY", "INR", "PKR"],
+  },
+
+  {
+    name: "to",
+    type: "list",
+    message: "Please select to currency 😉  :",
+    choices: ["USD", "EUR", "GBP", "JPY", "INR", "PKR"],
+  },
+  {
+    name: "amount",
+    type: "number",
+    message: "Enter youe amount ",
+  },
+]);
+
+// "from_amount" ka variable banaya hai jisme
+// Answer.from ko type:any curency k through arahi hai
+
+let from_amount = currency[Answer.from];
+
+// "to_amount" ka variable banaya hai jisme
+//Answer.to ki value bhi curency k through arahi hai
+
+let to_amount = currency[Answer.to];
+
+//yaha Answer.amount ki value ""input_amount"" me assign/store ki hai
+let input_amount = Answer.amount;
+
+// here we convert the amount into our base currency USD=1
+let convert_into_base_amount = input_amount / from_amount;
+
+// here we convert the amount into our base currency USD=1
+let desired_amount = convert_into_base_amount * to_amount;
+
+//logging our desired_amount
+console.log(desired_amount);
